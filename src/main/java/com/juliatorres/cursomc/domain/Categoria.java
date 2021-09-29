@@ -3,6 +3,12 @@ package com.juliatorres.cursomc.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Categoria implements Serializable {
 	/* Serializable - interface que diz que os objetos dela
        podem ser convertidos em uma sequência de bytes, ou seja
@@ -10,6 +16,8 @@ public class Categoria implements Serializable {
 	 */
     static final long serialVersionUID = 1L;
     
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id; 
 	private String nome; 
 	
