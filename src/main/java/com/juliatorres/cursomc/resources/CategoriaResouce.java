@@ -29,5 +29,4 @@ public class CategoriaResouce {
 		return ResponseEntity.ok(service.findAll());
 	}
 	
-
 }
