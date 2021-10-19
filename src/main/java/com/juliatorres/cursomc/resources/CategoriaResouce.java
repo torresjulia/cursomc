@@ -24,6 +24,7 @@ public class CategoriaResouce {
 		return ResponseEntity.ok().body(obj);		
 	}
 	
+	
 	@GetMapping
 	public ResponseEntity<?> findAll() {
 		return ResponseEntity.ok(service.findAll());
